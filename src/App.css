@@ -27,3 +27,21 @@ header{
     background-color: rgb(57, 55, 55);
     
 }
+
+.container{
+    width: 70%;
+    min-height: 85vh;
+    margin: auto;
+}
+.footer{
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+.footer .content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
