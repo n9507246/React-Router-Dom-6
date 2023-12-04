@@ -24,9 +24,18 @@ header{
     border-radius: 10px;
 }
 .naw-link:hover{
-    background-color: rgb(57, 55, 55);
-    
+    background-color: rgb(57, 55, 55);    
 }
+
+.naw-link.active-link{
+    color: rgb(199, 199, 253);
+}
+
+.active-link.naw-link:hover{
+    background-color: inherit;
+    cursor: default;
+}
+
 
 .container{
     width: 70%;
@@ -45,3 +54,4 @@ header{
     justify-content: center;
     align-items: center;
 }
+

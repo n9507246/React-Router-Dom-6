@@ -1,4 +1,5 @@
 import { Link, Outlet } from 'react-router-dom' 
+import CustomLink from '../UI/CustomLink'
 
 function DefaultLayout() {
 
@@ -6,14 +7,18 @@ function DefaultLayout() {
     <>
         <header>
             <div className="naw">
-            <Link className='naw-link' to='/'>Home</Link>
-            <Link className='naw-link' to='/about'>About</Link>
-            <Link className='naw-link' to='/blog'>Blog</Link>
+                <CustomLink className='naw-link' to='/'>Home</CustomLink>
+                <CustomLink className='naw-link' to='/about'>About</CustomLink>
+                <CustomLink className='naw-link' to='/blog'>Blog</CustomLink>
             </div>
         </header>
+
+
         <main className='container'>
             <Outlet/>
         </main>
+
+        
         <footer className='footer'>
             <div className="content">
                 footer
