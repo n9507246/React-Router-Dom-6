@@ -9,6 +9,13 @@ function App() {
 
   return (
     <>
+      <header>
+        <div className="naw">
+          <Link className='naw-link' to='/'>Home</Link>
+          <Link className='naw-link' to='/about'>About</Link>
+          <Link className='naw-link' to='/blog'>Blog</Link>
+        </div>
+      </header>
       <Routes>
         <Route path='/' element={ <Home/> }/>
         <Route path='/about' element={ <About/> }/>
