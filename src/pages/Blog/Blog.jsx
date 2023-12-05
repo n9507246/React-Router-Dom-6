@@ -12,10 +12,13 @@ function Blog() {
     
     return (
       <>
-        <div>Posts index</div>
+        <div className="header_post_list">
+          <h1>Post list</h1>
+            <Link style={{color:'white'}} className='btn link' to='/post/create' >Create post</Link>
+        </div>
         {
           posts.map(post => 
-            <Link key={post.id} to={`/posts/${post.id}`}>
+            <Link className='link' key={post.id} to={`/posts/${post.id}`}>
               <li>{post.title}</li>
             </Link>
           )
