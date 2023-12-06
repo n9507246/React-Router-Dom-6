@@ -13,7 +13,10 @@ function Home() {
     return (
       <>
         <h1>Welcome {user?.name}</h1>
-        <button onClick={logout}>Sing out</button>
+        {
+          user!== null && <button onClick={logout}>Sing out</button>
+        }
+        
       </>
     )
   }
